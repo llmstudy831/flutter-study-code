@@ -20,7 +20,13 @@ class MyHomePage extends StatelessWidget {
       appBar: AppBar(title: Text('테이블 UI 예제')),  // 화면 상단 제목 표시줄
       body: Container(
         color: Colors.blue[100],             // 연한 파란색 배경을 가진 Container
-        child: Text('Hello Flutter!'),       // Container 안에 간단한 텍스트 위젯
+        child: Column(
+          children: [
+            Text('첫 번째 줄'),       // 첫 번째 텍스트 위젯
+            Text('두 번째 줄'),       // 두 번째 텍스트 위젯
+            Text('세 번째 줄'),       // 세 번째 텍스트 위젯
+          ],
+        )
       ),
     );
 
