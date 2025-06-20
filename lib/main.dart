@@ -25,6 +25,13 @@ class MyHomePage extends StatelessWidget {
             Text('첫 번째 줄'),       // 첫 번째 텍스트 위젯
             Text('두 번째 줄'),       // 두 번째 텍스트 위젯
             Text('세 번째 줄'),       // 세 번째 텍스트 위젯
+            Row(
+              children: [
+                Icon(Icons.star),    // 첫 번째 자식: 별 아이콘
+                Icon(Icons.star),    // 두 번째 자식: 별 아이콘
+                Icon(Icons.star),    // 세 번째 자식: 별 아이콘
+              ],
+            )
           ],
         )
       ),
