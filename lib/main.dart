@@ -15,23 +15,14 @@ class MyApp extends StatelessWidget {
 class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Flutter Demo'),    // 상단 앱바에 표시될 제목
-      ),
-      drawer: Drawer(
-        child: Center(child: Text('Drawer 내용')),  // 드로어에 들어갈 내용
-      ),
-      body: Center(
-        child: Text('Hello Flutter'),  // 중앙에 표시될 텍스트
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          // 버튼 눌렀을 때 실행될 코드 (예: 콘솔 출력)
-          print('FAB clicked');
-        },
-        child: Icon(Icons.add),  // '+' 아이콘 표시
+      appBar: AppBar(title: Text('테이블 UI 예제')),  // 화면 상단 제목 표시줄
+      body: Container(
+        color: Colors.blue[100],             // 연한 파란색 배경을 가진 Container
+        child: Text('Hello Flutter!'),       // Container 안에 간단한 텍스트 위젯
       ),
     );
+
   }
 }
